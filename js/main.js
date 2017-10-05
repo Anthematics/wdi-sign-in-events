@@ -7,17 +7,22 @@ let submit =document.querySelector(".submit")
 let username=document.querySelector("#user")
 let password = document.querySelector("#pass")
 
+username.className = 'error'
+password.ClassName = 'error'
+
 	signin.addEventListener('click',	function() {
 			modal.style.display = 'block'
-		})
+		});
 
 	close.addEventListener('click', function() {
 			modal.style.display = 'none'
-		})
+		});
 
-	submit.addEventListener('click',function(){
+	password.addEventListener('click',function(){
+		password.className = 'error'
+	});
 
-
-	})
-
+	username.addEventListener('click',function(){
+		username.className = 'error'
+	});
 });
